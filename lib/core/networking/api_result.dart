@@ -1,0 +1,8 @@
+// import 'package:freezed_annotation/freezed_annotation.dart';
+// import 'package:house_star_app/core/error/failure.dart';
+
+// @Freezed()
+// abstract class ApiResult<T> with _$ApiResult<T> {
+//   const factory ApiResult.success(T data) = Success<T>;
+//   const factory ApiResult.error(Failure message) = Failure<T>;
+// }
