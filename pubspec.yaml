@@ -6,40 +6,61 @@ version: 1.0.0+1
 environment:
   sdk: ^3.9.2
 
+# ---------------------------------------------
+# APPLICATION DEPENDENCIES (NO GENERATORS HERE)
+# ---------------------------------------------
 dependencies:
-  build_runner: ^2.10.4
   connectivity_plus: ^7.0.0
   cupertino_icons: ^1.0.8
   dio: ^5.9.0
   flutter:
     sdk: flutter
-  flutter_gen_runner: ^5.12.0
   flutter_localization: ^0.3.3
+  flutter_screenutil: ^5.9.3
   flutter_secure_storage: ^9.2.4
   flutter_svg: ^2.2.3
-  freezed: ^3.2.3
   freezed_annotation: ^3.1.0
   get_it: ^9.1.0
   intl: ^0.20.2
   json_annotation: ^4.9.0
-  json_serializable: ^6.11.2
   logger: ^2.6.2
   pretty_dio_logger: ^1.4.0
   retrofit: ^4.9.1
-  retrofit_generator: ^10.2.0
   shared_preferences: ^2.5.3
 
+# ---------------------------------------------
+# DEV DEPENDENCIES (CODE GENERATORS ONLY HERE)
+# ---------------------------------------------
 dev_dependencies:
-  flutter_lints: ^5.0.0 # Strict lint rules
-  flutter_test:
-    sdk: flutter # Testing framework
-  json_serializable: ^6.11.2 # JSON serialization generator (compatible with freezed)
+  build_runner: ^2.10.4
   flutter_gen_runner: ^5.12.0
 
-flutter_gen:
-  output: lib/core/gen/
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  freezed: ^3.2.3
+  json_serializable: ^6.11.2
+  retrofit_generator: ^10.2.0
+
+# ---------------------------------------------
+# FLUTTER ASSETS
+# ---------------------------------------------
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/svgs/
+    - assets/lottie/
 
-flutter_intl:
-  enabled: true
+# ---------------------------------------------
+# FLUTTER GEN (ASSET GENERATION SETTINGS)
+# ---------------------------------------------
+flutter_gen:
+  output: lib/core/gen/
+
+# ---------------------------------------------
+# LOCALIZATION TOOL
+# ---------------------------------------------
+# flutter_intl:
+#   enabled: true

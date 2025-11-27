@@ -7,11 +7,10 @@
 /// initializes dependency injection, error handling, and runs the app.
 
 import 'package:flutter/material.dart';
+import 'package:house_star_app/house_star_app.dart';
 
 import 'app.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
   runApp(const HouseStarApp());
 }
